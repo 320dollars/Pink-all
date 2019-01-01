@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
   <head>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta charset="utf-8">
     <title>Pink</title>
   </head>
   <body>
-    <header>
-      <img src="#" alt="logo">
-      <button type="button" name="button">Enter</button>
-      <button type="button" name="button">Exit</button>
-      <nav>
-        <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Фотографии</a></li>
-          <li><a href="#">Конкурс</a></li>
-          <li><a href="#">Html academy</a></li>
-        </ul>
-      </nav>
+    <div class="container">
+    <header class="block_header">
+      <img src="img/logotype.png" alt="logo" class="header__logo" width="75" height="25">
+      <a href="#" class="header__btn"><img src="img/burger.png" alt="button" width="55" height="30"></a>
     </header>
     <main>
-      <section>
-        <h1>Pink</h1>
+      <section class="offer_block">
+        <h1 class="title-hidden">Pink</h1>
         <a href="#">Скачать приложение</a>
         <div class="">
           <img src="#" alt="ios">
@@ -90,5 +85,6 @@
         <img src="#" alt="map">
       </section>
     </main>
+    </div>
   </body>
 </html>

@@ -15,10 +15,21 @@ var gulp = require('gulp'), // Подключаем Gulp
     rename  = require('gulp-rename'); // Подключаем библиотеку для переименования файлов
 
 gulp.task('sass', function(){ // Создаем таск Sass
-    return gulp.src('app/sass/**/*.sass') // Берем источник
+    return gulp.src('app/sass/**/*.scss') // Берем источник
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
         .pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
         .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
+});
+
+var autoprefixer = require('gulp-autoprefixer');
+
+gulp.task('default', function () {
+    return gulp.src('app/css/**/*.css')
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('app/css'));
 });
 
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
