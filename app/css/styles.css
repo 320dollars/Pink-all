@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #f2f2f2;
+  background: #fff;
   font-size: 14px;
   line-height: 30px;
   font-family: 'Open Sans', sans-serif; }
@@ -12,19 +12,99 @@ body {
   margin-right: auto; }
 
 .block_header {
-  background: rgba(29, 38, 49, 0.3);
+  background: rgba(29, 38, 49, 0.5);
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
   justify-content: space-between;
   width: 280px;
   position: absolute;
   z-index: 1; }
 
+.header__btn {
+  width: 50px;
+  height: 25px;
+  border: none;
+  background: transparent url(../img/burger.png) no-repeat; }
+  .header__btn:hover {
+    background: transparent url(../img/burger-hover.png) no-repeat;
+    color: #d22856; }
+  .header__btn:active {
+    background: transparent url(../img/burger-active.png) no-repeat; }
+
 .offer_block {
-  background: url(../img/back.jpg);
-  height: 670px; }
+  padding-top: 460px;
+  background: url(../img/hand.png) no-repeat 0 150px, url(../img/fon.jpg) no-repeat 105px 183px, url(../img/back.jpg) no-repeat 0 0; }
 
 .title-hidden {
   position: absolute;
   color: transparent; }
+
+.offer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  background-color: #1d2631; }
+
+.offer__platform {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  align-items: baseline; }
+
+.offer__item {
+  padding: 25px; }
+
+.offer__button {
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 57px;
+  background: transparent;
+  border: 3px solid #fff;
+  border-radius: 60px; }
+  .offer__button:hover {
+    background: #fff;
+    color: #d22856; }
+  .offer__button:active {
+    color: rgba(241, 190, 204, 0.7); }
+
+.offer__discription {
+  color: #fff;
+  font-weight: light;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 35px; }
+
+.info_block {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px; }
+
+.info__title {
+  color: #364351;
+  font-size: 24px;
+  line-height: auto;
+  font-weight: light;
+  text-align: center; }
+
+.info__reasons {
+  background: url(../img/Shape.png) no-repeat center;
+  padding-top: 85px;
+  padding-bottom: 315px; }
+
+.reason__title {
+  font-size: 18px;
+  line-height: auto;
+  text-align: center; }
+
+.reason_description {
+  color: #283645;
+  text-align: center; }

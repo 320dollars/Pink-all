@@ -1,39 +1,132 @@
-$pageColor : #f2f2f2;
-$headerBack : rgba(29, 38, 49, 0.3);
-
+$header_color : rgba(29, 38, 49, 0.5);
+$offer_color : #1d2631;
+$wh : #fff;
+$red : #d22856;
+$redAct : rgba(241, 190, 204, 0.7);
+$textColor1 : #364351;
+$textColor2 : #283645;
 
 body {
   margin: 0;
   padding: 0;
-  background: $pageColor;
+  background: $wh;
   font-size: 14px;
   line-height: 30px;
-  font-family: 'Open Sans', sans-serif;
-}
+  font-family: 'Open Sans', sans-serif; }
 
 .container {
   width: 320px;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
 .block_header {
-  background: $headerBack;
+  background: $header_color;
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
   justify-content: space-between;
   width: 280px;
   position: absolute;
-  z-index: 1;
+  z-index: 1; }
+
+.header__btn {
+  width: 50px;
+  height: 25px;
+  border: none;
+  background: transparent url(../img/burger.png) no-repeat;
+  &:hover {
+    background: transparent url(../img/burger-hover.png) no-repeat;
+    color: $red;
+  }
+  &:active {
+    background: transparent url(../img/burger-active.png) no-repeat;
+  }
 }
 
 .offer_block {
-  background: url(../img/back.jpg);
-  height: 670px;
-}
+  padding-top: 460px;
+  background: url(../img/hand.png) no-repeat 0 150px, url(../img/fon.jpg) no-repeat 105px 183px, url(../img/back.jpg) no-repeat 0 0; }
 
 .title-hidden {
   position: absolute;
-  color: transparent;
+  color: transparent; }
+
+.offer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  background-color: $offer_color; }
+
+.offer__platform {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  align-items: baseline;
+}
+
+.offer__item {
+  padding: 25px;
+}
+
+.offer__button {
+  display: flex;
+  text-decoration: none;
+  color: $wh;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 57px;
+  background: transparent;
+  border: 3px solid $wh;
+  border-radius: 60px;
+  &:hover {
+    background: $wh;
+    color: $red;
+  }
+  &:active {
+    color: $redAct;
+  }
+}
+
+.offer__discription {
+  color: $wh;
+  font-weight: light;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 35px;
+}
+
+.info_block {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+.info__title {
+  color: $textColor1;
+  font-size: 24px;
+  line-height: auto;
+  font-weight: light;
+  text-align: center;
+}
+
+.info__reasons {
+  background: url(../img/Shape.png) no-repeat center;
+  padding-top: 85px;
+  padding-bottom: 315px;
+}
+
+.reason__title {
+  font-size: 18px;
+  line-height: auto;
+  text-align: center;
+}
+
+.reason_description {
+  color: $textColor2;
+  text-align: center;
 }
