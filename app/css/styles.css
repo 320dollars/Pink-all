@@ -96,15 +96,85 @@ body {
   text-align: center; }
 
 .info__reasons {
-  background: url(../img/Shape.png) no-repeat center;
+  background: url(../img/iphone.png) no-repeat center 108%, url(../img/Shape.png) no-repeat center;
   padding-top: 85px;
   padding-bottom: 315px; }
 
 .reason__title {
+  line-height: 10px;
   font-size: 18px;
   line-height: auto;
   text-align: center; }
 
 .reason_description {
+  padding-bottom: 10px;
+  font-size: 14px;
+  line-height: 24px;
   color: #283645;
   text-align: center; }
+
+.reviewes_block {
+  padding-top: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.review__content {
+  margin-top: 0px;
+  text-align: center; }
+
+.reviewes_block ul {
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  margin-left: -40px; }
+
+.radios__item {
+  background: url(../img/shape2.png) no-repeat 0 0;
+  display: block;
+  color: transparent;
+  width: 6px;
+  height: 6px;
+  font-size: 5px;
+  margin: 10px; }
+  .radios__item:hover {
+    background: url(../img/Shape4.png) no-repeat center; }
+  .radios__item:active {
+    background: url(../img/Shape5.png) no-repeat center; }
+
+.radios__item--active {
+  display: block;
+  color: transparent;
+  width: 6px;
+  height: 6px;
+  font-size: 5px;
+  margin: 10px;
+  border: 3px solid #283645;
+  border-radius: 50%; }
+
+.price__table {
+  border-collapse: collapse; }
+
+.price__title {
+  background: #283645;
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.price__amount {
+  font-size: 24px;
+  font-weight: light; }
+
+.price__option {
+  border: 2px solid #e5e5e5;
+  color: #364351;
+  text-transform: uppercase;
+  padding: 13px 0px 23px 13px; }
