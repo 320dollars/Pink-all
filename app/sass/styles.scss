@@ -1,10 +1,13 @@
 $header_color : rgba(29, 38, 49, 0.5);
 $offer_color : #1d2631;
 $wh : #fff;
+$bl : #000;
 $red : #d22856;
 $redAct : rgba(241, 190, 204, 0.7);
 $textColor1 : #364351;
 $textColor2 : #283645;
+$textColor3 : rgba(190, 194, 199, 0.3);
+$borderColor : #485461;
 
 body {
   margin: 0;
@@ -146,7 +149,7 @@ body {
   text-align: center;
 }
 
-.reviewes_block ul {
+.reviewes_block ul, .price_block ul {
   list-style: none;
   display: flex;
   align-items: baseline;
@@ -180,11 +183,21 @@ body {
   border-radius: 50%;
 }
 
+.price_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../img/shape-price.png) no-repeat;
+  padding-top: 90px;
+}
+
 .price__table {
   border-collapse: collapse;
 }
 
 .price__title {
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
   background: $textColor2;
   color: $wh;
   font-size: 18px;
@@ -203,8 +216,124 @@ body {
 }
 
 .price__option {
+  width: 100%;
   border: 2px solid #e5e5e5;
   color: $textColor1;
   text-transform: uppercase;
   padding: 13px 0px 23px 13px;
+}
+
+.option--yes {
+  background: $wh url(../img/yes.png) no-repeat 90% center;
+}
+
+.option--no {
+  background: $wh url(../img/no.png) no-repeat 90% center;
+}
+
+.price__table tr {
+  display: flex;
+}
+
+.contacts_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: url(../img/tri.png) no-repeat center 295px;
+}
+
+.contacts__title {
+  font-size: 24px;
+  line-height: auto;
+  font-weight: light;
+  color: $textColor1;
+  text-align: center;
+}
+
+.contacts__option {
+  font-size: 18px;
+  line-height: auto;
+  color: $textColor1;
+  text-align: center;
+}
+
+.contacts__info {
+  text-decoration: none;
+  color: $red;
+  font-size: 24px;
+  line-height: auto;
+  font-weight: light;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.info__anchor {
+  &:hover {
+    color: $textColor2;
+    text-decoration: underline;
+   }
+  &:active {
+    color: $textColor3;
+    text-decoration: none;
+  }
+}
+
+.contacts__map {
+  z-index: -1;
+}
+
+.navigation {
+  position: relative;
+  margin-top: -20px;
+  margin-bottom: -90px;
+  z-index: 2;
+}
+
+.nav_block {
+  background: $textColor2;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.nav__item {
+  width: 100%;
+  border-bottom: 1px solid $bl;
+  border-top: 1px solid $borderColor;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  text-decoration: none;
+  color: $wh;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  align-items: center;
+  &:hover {
+    color: $red;
+  }
+  &:active {
+    color: $redAct;
+  }
+}
+
+.first__item {
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
+}
+
+.btn--close {
+  width: 25px;
+  height: 25px;
+  background: transparent url(../img/menucross.png) no-repeat;
+  &:hover {
+    background: transparent url(../img/close-hover.png) no-repeat;
+  }
+  &:active {
+    background: transparent url(../img/close-active.png) no-repeat;
+  }
 }

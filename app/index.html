@@ -9,6 +9,18 @@
   </head>
   <body>
     <div class="container">
+      <section>
+        <nav class="navigation">
+          <ul class="nav_block">
+            <li class="nav__item first__item"><img src="img/logotype.png" alt="logo" class="header__logo" width="75" height="25">
+            <button type="button" class="header__btn btn--close" name="button"></button></li>
+            <li><a href="#" class="nav__item">Главная</a></li>
+            <li><a href="#" class="nav__item">Фотографии</a></li>
+            <li><a href="#" class="nav__item">Конкурс</a></li>
+            <li><a href="#" class="nav__item">htmlacademy</a></li>
+          </ul>
+        </nav>
+      </section>
     <header class="block_header">
       <img src="img/logotype.png" alt="logo" class="header__logo" width="75" height="25">
       <button type="button" class="header__btn" name="button"></button>
@@ -49,7 +61,7 @@
         <p class="review__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
         А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         <ul>
-          <li><a href="#" class="radios__item">shape</a></li>
+          <li><a href="#" class="radios__item--active">shape</a></li>
           <li><a href="#" class="radios__item">shape</a></li>
           <li><a href="#" class="radios__item">shape</a></li>
         </ul>
@@ -57,33 +69,41 @@
       <section class="price_block">
         <table class="price__table">
           <tr>
-            <th class="price__title">Стандарт <span class="price__amount">3,99 USD</span></th>
+            <th class="price__title">База <span class="price__amount">1,99 USD</span></th>
+            <th class="price__title title--hit">Стандарт <span class="price__amount">3,99 USD</span></th>
+            <th class="price__title">Анлим <span class="price__amount">9,99 USD</span></th>
           </tr>
           <tr>
-            <td class="price__option">Розовый фильтр</td>
+            <td class="price__option option--yes">Розовый фильтр</td>
+            <td class="price__option option--yes">Розовый фильтр</td>
+            <td class="price__option option--yes">Розовый фильтр</td>
           </tr>
           <tr>
-            <td class="price__option">Смайлики</td>
+            <td class="price__option option--no">Смайлики</td>
+            <td class="price__option option--yes">Смайлики</td>
+            <td class="price__option option--yes">Смайлики</td>
           </tr>
           <tr>
-            <td class="price__option">Комментарии</td>
+            <td class="price__option option--no">Комментарии</td>
+            <td class="price__option option--no">Комментарии</td>
+            <td class="price__option option--yes">Комментарии</td>
           </tr>
         </table>
         <ul>
           <li><a href="#" class="radios__item">shape</a></li>
-          <li><a href="#" class="radios__item">shape</a></li>
+          <li><a href="#" class="radios__item--active">shape</a></li>
           <li><a href="#" class="radios__item">shape</a></li>
         </ul>
       </section>
-      <section>
-        <h2>Остались вопросы? Свяжитесь с нами!</h2>
-        <b>Звоните</b>
-        <span>+7 (812) 555-66-66</span>
-        <b>Пишите</b>
-        <span><a href="#">mail@htmlacademy.ru</a></span>
-        <b>Приезжайте в гости</b>
-        <span>ул. Большая Конюшенная, 19/8</span>
-        <img src="#" alt="map">
+      <section class="contacts_block">
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <b class="contacts__option">Звоните:</b>
+        <span class="contacts__info">+7 (812) 555-66-66</span>
+        <b class="contacts__option">Пишите:</b>
+        <span class="contacts__info"><a href="#" class="contacts__info info__anchor">mail@htmlacademy.ru</a></span>
+        <b class="contacts__option">Приезжайте в гости:</b>
+        <span class="contacts__info">ул. Большая Конюшенная, 19/8</span>
+        <img src="img/map.jpg" alt="map" width="320" height="220" class="contacts__map">
       </section>
     </main>
     </div>
