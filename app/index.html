@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -12,7 +13,7 @@
       <section>
         <nav class="navigation">
           <ul class="nav_block">
-            <li class="nav__item first__item"><img src="img/logotype.png" alt="logo" class="header__logo" width="75" height="25">
+            <li class="nav__item first__item"><a href="#" class="header__logo">Logo</a>
             <button type="button" class="header__btn btn--close" name="button"></button></li>
             <li><a href="#" class="nav__item">Главная</a></li>
             <li><a href="#" class="nav__item">Фотографии</a></li>
@@ -22,13 +23,14 @@
         </nav>
       </section>
     <header class="block_header">
-      <img src="img/logotype.png" alt="logo" class="header__logo" width="75" height="25">
+      <a href="#" class="header__logo">Logo</a>
       <button type="button" class="header__btn" name="button"></button>
     </header>
     <main>
       <section class="offer_block">
         <h1 class="title-hidden">Pink</h1>
         <div class="offer__info">
+          <b class="offer__text">Взгляните на жизнь иначе!</b>
           <a href="#" class="offer__button">Скачать приложение</a>
           <ul class="offer__platform">
             <li class="offer__item"><img src="img/apple-logo.png" alt="ios" width="50" height="55"></li>
@@ -40,7 +42,7 @@
       </section>
       <section class="info_block">
         <b class="info__title">Устали от серости мегаполиса?</b>
-        <h2 class="info__title">Нам есть, что вам предложить!</h2>
+        <h2 class="info__title title--tablet">Нам есть, что вам предложить!</h2>
         <div class="info__reasons">
           <div class="info__reason">
             <h3 class="reason__title">Поднимает настроение</h3>
@@ -67,26 +69,27 @@
         </ul>
       </section>
       <section class="price_block">
+        <span class="price__promo">Хит</span>
         <table class="price__table">
           <tr>
-            <th class="price__title">База <span class="price__amount">1,99 USD</span></th>
+            <th class="price__title title--hidden">База <span class="price__amount">1,99 USD</span></th>
             <th class="price__title title--hit">Стандарт <span class="price__amount">3,99 USD</span></th>
-            <th class="price__title">Анлим <span class="price__amount">9,99 USD</span></th>
+            <th class="price__title title--hidden">Анлим <span class="price__amount">9,99 USD</span></th>
           </tr>
           <tr>
+            <td class="price__option option--yes title--hidden">Розовый фильтр</td>
             <td class="price__option option--yes">Розовый фильтр</td>
-            <td class="price__option option--yes">Розовый фильтр</td>
-            <td class="price__option option--yes">Розовый фильтр</td>
+            <td class="price__option option--yes title--hidden">Розовый фильтр</td>
           </tr>
           <tr>
-            <td class="price__option option--no">Смайлики</td>
+            <td class="price__option option--no title--hidden">Смайлики</td>
             <td class="price__option option--yes">Смайлики</td>
-            <td class="price__option option--yes">Смайлики</td>
+            <td class="price__option option--yes title--hidden">Смайлики</td>
           </tr>
           <tr>
+            <td class="price__option option--no title--hidden">Комментарии</td>
             <td class="price__option option--no">Комментарии</td>
-            <td class="price__option option--no">Комментарии</td>
-            <td class="price__option option--yes">Комментарии</td>
+            <td class="price__option option--yes title--hidden">Комментарии</td>
           </tr>
         </table>
         <ul>

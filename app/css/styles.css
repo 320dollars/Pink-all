@@ -32,6 +32,25 @@ body {
   .header__btn:active {
     background: transparent url(../img/burger-active.png) no-repeat; }
 
+.header__logo {
+  display: block;
+  font-size: 20px;
+  color: transparent;
+  background: url(../img/logotype.png) no-repeat;
+  width: 75px;
+  height: 25px; }
+
+/*@media (min-width: 660px) {
+  .container {
+    width: 660px; }
+  .block_header {
+    padding: 25px 20px 40px 20px;
+    width: 620px; }
+  .header__logo {
+    width: 150px;
+    height: 40px;
+    background: url(../img/logo-t.png) no-repeat; } }*/
+
 .offer_block {
   padding-top: 460px;
   background: url(../img/hand.png) no-repeat 0 150px, url(../img/fon.jpg) no-repeat 105px 183px, url(../img/back.jpg) no-repeat 0 0; }
@@ -61,7 +80,7 @@ body {
   text-decoration: none;
   color: #fff;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 52px;
   font-weight: bold;
   justify-content: center;
   align-items: center;
@@ -82,6 +101,30 @@ body {
   text-align: center;
   margin-top: 0px;
   margin-bottom: 35px; }
+
+.offer__text {
+  display: none;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-weight: light;
+  line-height: auto;
+  margin-left: 45px;
+  margin-right: 45px;
+  margin-bottom: 35px; }
+
+/*@media (min-width: 660px) {
+  .offer_block {
+    padding-top: 140px;
+    background: url(../img/hand-t.png) no-repeat 0 175px, url(../img/screen-t.png) no-repeat 370px 240px, url(../img/back-t.jpg) no-repeat 0 0; }
+  .offer__info {
+    padding-top: 100px;
+    padding-right: 320px;
+    background-color: transparent; }
+  .offer__text {
+    display: block; }
+  .offer__discription {
+    margin-bottom: 0; } }*/
 
 .info_block {
   display: flex;
@@ -112,6 +155,12 @@ body {
   line-height: 24px;
   color: #283645;
   text-align: center; }
+
+/*@media (min-width: 660px) {
+  .info_block {
+    padding-top: 0px; }
+  .info__title {
+    font-size: 40px; } }*/
 
 .reviewes_block {
   padding-top: 45px;
@@ -155,6 +204,7 @@ body {
   border-radius: 50%; }
 
 .price_block {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,12 +228,15 @@ body {
   padding-top: 20px;
   padding-bottom: 20px; }
 
+.title--hidden {
+  display: none; }
+
 .price__amount {
   font-size: 24px;
   font-weight: light; }
 
 .price__option {
-  width: 100%;
+  width: 270px;
   border: 2px solid #e5e5e5;
   color: #364351;
   text-transform: uppercase;
@@ -197,6 +250,19 @@ body {
 
 .price__table tr {
   display: flex; }
+
+.title--hit {
+  background: #283645 url(../img/hit.png) no-repeat; }
+
+.price__promo {
+  transform: rotate(-47deg);
+  color: #fff;
+  position: absolute;
+  font-weight: semibold;
+  left: 30px;
+  top: 105px;
+  font-size: 14px;
+  text-transform: uppercase; }
 
 .contacts_block {
   display: flex;
@@ -239,6 +305,7 @@ body {
   z-index: -1; }
 
 .navigation {
+  display: none;
   position: relative;
   margin-top: -20px;
   margin-bottom: -90px;
