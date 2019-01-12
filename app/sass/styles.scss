@@ -1,4 +1,4 @@
-$header_color : rgba(29, 38, 49, 0.5);
+$header_color : rgba(29, 38, 49, 0.3);
 $offer_color : #1d2631;
 $wh : #fff;
 $bl : #000;
@@ -10,6 +10,7 @@ $textColor3 : rgba(190, 194, 199, 0.3);
 $borderColor : #485461;
 $lightGrey : #e5e5e5;
 $borderColor2 : #e9ebec;
+$shapeColor : #f2f2f2;
 
 body {
   margin: 0;
@@ -23,6 +24,12 @@ body {
   width: 320px;
   margin-left: auto;
   margin-right: auto; }
+
+  .offer-box,
+  .nav-box,
+  .info-box {
+    display: none;
+  }
 
 .block_header {
   background: $header_color;
@@ -72,9 +79,17 @@ body {
       }
 }
 
-@media (min-width: 660px) {
+@media (min-width: 960px) {
   .container {
-    width: 1200px; }
+    width: 960px; }
+
+  .block_header {
+    display: none;
+  }
+
+  .header__logo {
+    background: url(../img/logodesk.png) no-repeat;
+  }
 }
 
 .offer_block {
@@ -163,6 +178,49 @@ body {
       }
 }
 
+@media (min-width: 960px) {
+  .nav-box {
+    height: 110px;
+    background: $header_color;
+    display: block;}
+
+  .offer-box {
+    display: block;
+    background: url(../img/back-desktop.jpg) no-repeat;
+    background-size: cover;
+    height: 873px;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+  }
+
+  .offer_block {
+    background: none;
+    background: url(../img/iphone-desk.png) no-repeat 55px bottom, url(../img/fon-desk.jpg) no-repeat 625px 285px;
+  }
+
+  .offer__info {
+    padding-top: 115px;
+    padding-right: 650px;
+    background-color: transparent; }
+
+    .offer__text {
+      margin-top: 0;
+      margin-bottom: 35px; }
+
+    .offer__platform {
+      margin-right: 30px;}
+
+    .offer__button {
+      margin-bottom: 30px; }
+
+    .offer__item {
+      margin-bottom: 20px; }
+
+    .offer__discription {
+      margin-bottom: 85px; }
+}
+
 .info_block {
   display: flex;
   flex-direction: column;
@@ -226,6 +284,57 @@ body {
 
   .reason_description {
     text-align: left; }
+    }
+
+    @media (min-width: 960px) {
+      .info-box {
+        display: block;
+        position: absolute;
+        background: url(../img/shape-desk.png) no-repeat;
+        background-size: cover;
+        top: 1100px;
+        width: 100%;
+        height: 1030px;
+        z-index: -1;
+      }
+
+      .info_block {
+        padding-top: 75px;
+      }
+
+      .info__title {
+        line-height: 50px;
+        font-size: 50px; }
+
+      .info__reasons {
+        background: none;
+        background:
+        url(../img/scr-desk-smile.jpg) no-repeat 713px 53px,
+        url(../img/scr-tab.jpg) no-repeat 393px 53px,
+        url(../img/scr-grey.jpg) no-repeat 78px 53px,
+        url(../img/iphone-desk-min.png) no-repeat 70px 15px,
+        url(../img/iphone-desk-min.png) no-repeat 385px 15px,
+        url(../img/iphone-desk-min.png) no-repeat 705px 15px;
+        flex-direction: row;
+        padding-top: 350px;
+        padding-left: 0;
+      }
+
+      .info__reason {
+        width: 225px;
+        background: $shapeColor;
+        box-shadow: 0 -6px 2px -3px rgba(0, 0, 0, 0.3);
+      }
+
+      .reason__title{
+        text-align: center;
+        font-size: 30px;
+        line-height: 30px;
+      }
+
+      .reason_description {
+        font-size: 16px;
+        text-align: center; }
     }
 
 .reviewes_block {
@@ -716,5 +825,45 @@ body {
     padding-bottom: 35px;
     align-items: flex-end;
     width: 600px;
+  }
+}
+
+@media (min-width: 960px) {
+  .navigation {
+    display: block;
+  }
+
+  .nav_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $header_color;
+    padding-right: 10px;
+  }
+
+  .nav__item {
+    border: none;
+    font-size: 18px;
+    text-transform: none;
+    font-weight: normal;
+    padding-left: 37px;
+    padding-right: 37px;
+    line-height: 18px;
+  }
+
+  .btn--close {
+    display: none;
+  }
+
+  .first__item {
+    padding-top: 24px;
+    padding-bottom: 45px;
+    padding: 24px 10px 45px 10px;
+  }
+
+  .nav-box {
+    background: $header_color;
+    z-index: -1;
+    max-height: 110px;
   }
 }
