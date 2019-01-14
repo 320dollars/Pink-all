@@ -13,7 +13,8 @@ body {
 
 .offer-box,
 .nav-box,
-.info-box {
+.info-box,
+.map-box {
   display: none; }
 
 .block_header {
@@ -246,6 +247,7 @@ body {
     background: url(../img/scr-desk-smile.jpg) no-repeat 713px 53px, url(../img/scr-tab.jpg) no-repeat 393px 53px, url(../img/scr-grey.jpg) no-repeat 78px 53px, url(../img/iphone-desk-min.png) no-repeat 70px 15px, url(../img/iphone-desk-min.png) no-repeat 385px 15px, url(../img/iphone-desk-min.png) no-repeat 705px 15px;
     flex-direction: row;
     padding-top: 350px;
+    padding-bottom: 0;
     padding-left: 0; }
   .info__reason {
     width: 225px;
@@ -310,6 +312,9 @@ body {
 .author__proffesion {
   display: none; }
 
+.slider__btn {
+  display: none; }
+
 @media (min-width: 660px) {
   .effect_block {
     position: relative;
@@ -354,6 +359,37 @@ body {
     display: block;
     color: #283645;
     order: 2; } }
+
+@media (min-width: 960px) {
+  .effect_block {
+    padding-top: 0;
+    padding-bottom: 310px; }
+  .reviewes_block {
+    position: relative;
+    padding-top: 0;
+    background: url(../img/quotes.png) no-repeat center 410px;
+    padding-bottom: 40px; }
+  .review__content {
+    margin-left: 125px;
+    margin-right: 125px; }
+  .reviewes_block ul {
+    display: none; }
+  .slider__btn {
+    display: block;
+    width: 25px;
+    height: 40px;
+    font-size: 3px;
+    border: none;
+    color: transparent;
+    position: absolute; }
+  .btn--next {
+    background: #fff url(../img/right-arrow.png) no-repeat;
+    top: 565px;
+    right: 10px; }
+  .btn--previous {
+    background: #fff url(../img/left-arrow.png) no-repeat;
+    top: 565px;
+    left: 10px; } }
 
 .price_block {
   position: relative;
@@ -418,6 +454,8 @@ body {
   text-transform: uppercase; }
 
 @media (min-width: 660px) {
+  .price-box {
+    display: none; }
   .price_block {
     background: url(../img/shape-tab.png) no-repeat 0 0;
     padding-top: 105px;
@@ -454,6 +492,40 @@ body {
   .price__promo {
     top: 5px;
     left: 5px; } }
+
+@media (min-width: 960px) {
+  .price-box {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 525px;
+    top: 2540px;
+    background: url(../img/shape-d-p.png) no-repeat;
+    background-size: cover; }
+  .price_block {
+    background: none;
+    padding-top: 125px; }
+  .price__title {
+    width: 205px;
+    height: 70px;
+    font-size: 18px; }
+  .price__amount {
+    font-size: 24px; }
+  .price__option {
+    width: 192px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    align-items: center; }
+  .option--yes {
+    font-size: 0; }
+  .option--no {
+    font-size: 0; }
+  .title--hit {
+    background: #283645 url(../img/hit.png) no-repeat; }
+  .price__promo {
+    top: 13px;
+    left: 13px; } }
 
 .contacts_block {
   display: flex;
@@ -583,6 +655,64 @@ body {
     height: 35px;
     color: transparent;
     background: url(../img/htmlacademy.png) no-repeat 100% center; } }
+
+@media (min-width: 960px) {
+  .contacts_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 75px; }
+  .contacts__title {
+    font-size: 50px;
+    line-height: 50px;
+    width: 520px;
+    margin-bottom: 690px; }
+  .option--call {
+    position: absolute;
+    top: 260px;
+    left: 110px; }
+  .option--write {
+    position: absolute;
+    top: 260px;
+    right: 110px; }
+  .option--come {
+    position: absolute;
+    top: 260px;
+    left: 380px; }
+  .info--number {
+    position: absolute;
+    top: 310px;
+    left: 45px; }
+  .info--email {
+    position: absolute;
+    top: 310px;
+    right: 25px; }
+  .info--address {
+    width: 210px;
+    position: absolute;
+    top: 310px;
+    left: 360px; }
+  .contacts__map {
+    display: none; }
+  .map-box {
+    width: 100%;
+    height: 500px;
+    display: block;
+    background: yellow url(../img/triangle-desk.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 3420px;
+    z-index: 1; }
+  .footer_block {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+  .logo__footer {
+    display: block;
+    margin-left: 10px;
+    width: 150px;
+    height: 45px;
+    color: transparent;
+    background: url(../img/logotype-desk-f.png) no-repeat; } }
 
 .nav_block {
   background: #283645;
