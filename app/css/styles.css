@@ -11,6 +11,11 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
+.title-hid {
+  font-size: 1px;
+  color: transparent;
+  position: absolute; }
+
 .offer-box,
 .nav-box,
 .info-box,
@@ -45,6 +50,11 @@ body {
   background: url(../img/logotype.png) no-repeat;
   width: 75px;
   height: 25px; }
+  .header__logo:hover {
+    background: url(../img/logo-hoverpng.png) no-repeat; }
+  .header__logo:active {
+    background: url(../img/logotype.png) no-repeat;
+    opacity: 0.3; }
 
 @media (min-width: 660px) {
   .container {
@@ -55,7 +65,12 @@ body {
   .header__logo {
     width: 150px;
     height: 40px;
-    background: url(../img/logo-t.png) no-repeat; } }
+    background: url(../img/logo-t.png) no-repeat; }
+    .header__logo:hover {
+      background: url(../img/glasses.png) no-repeat left center, url(../img/logo-hoverpng.png) no-repeat right bottom; }
+    .header__logo:active {
+      background: url(../img/logodesk.png) no-repeat;
+      opacity: .3; } }
 
 @media (min-width: 960px) {
   .container {
@@ -148,7 +163,7 @@ body {
   .offer-box {
     display: block;
     background: url(../img/back-desktop.jpg) no-repeat;
-    background-size: cover;
+    background-size: 100%;
     height: 873px;
     width: 100%;
     z-index: -1;
@@ -578,11 +593,12 @@ body {
 
 @media (min-width: 660px) {
   .contacts_block {
+    background-size: 100%;
     position: relative;
     padding-top: 30px;
     padding-left: 50px;
     padding-right: 25px;
-    background: url(../img/tri-tab.png) no-repeat center 365px; }
+    background: url(../img/tri-tab.png) no-repeat center 360px; }
   .contacts__title {
     font-size: 40px;
     line-height: 40px;
@@ -608,6 +624,7 @@ body {
     top: 215px;
     right: 25px; }
   .info--address {
+    z-index: 1;
     width: 210px;
     position: absolute;
     top: 325px;
@@ -627,6 +644,11 @@ body {
     height: 45px;
     color: transparent;
     background: url(../img/logo-footer-tab.png) no-repeat; }
+    .logo__footer:hover {
+      background: url(../img/glasses.png) no-repeat left center, url(../img/logo-hoverpng.png) no-repeat right bottom; }
+    .logo__footer:active {
+      background: url(../img/logotype-desk-f.png) no-repeat;
+      opacity: .3; }
   .social__medias {
     margin-left: -40px;
     list-style: none;
@@ -639,6 +661,11 @@ body {
     border-radius: 50%;
     color: transparent;
     margin: 6px; }
+    .media__anchor:hover {
+      border-color: #000; }
+    .media__anchor:active {
+      border-color: #e9ebec;
+      opacity: .1; }
   .anchor--twitter {
     background: url(../img/twitter.png) no-repeat center; }
   .anchor--facebook {
@@ -654,7 +681,11 @@ body {
     width: 40px;
     height: 35px;
     color: transparent;
-    background: url(../img/htmlacademy.png) no-repeat 100% center; } }
+    background: url(../img/htmlacademy.png) no-repeat 100% center; }
+    .footer__htmlacademy:hover {
+      background: url(../img/html-hover.png) no-repeat 100% center; }
+    .footer__htmlacademy:active {
+      opacity: .3; } }
 
 @media (min-width: 960px) {
   .contacts_block {
@@ -694,14 +725,17 @@ body {
     left: 360px; }
   .contacts__map {
     display: none; }
+  .map-desk {
+    width: 100%;
+    z-index: 0; }
   .map-box {
     width: 100%;
     height: 500px;
     display: block;
-    background: yellow url(../img/triangle-desk.png) no-repeat;
+    background: url(../img/triangle-desk.png) no-repeat;
     background-size: 100%;
     position: absolute;
-    top: 3420px;
+    top: 3470px;
     z-index: 1; }
   .footer_block {
     padding-top: 40px;
@@ -781,6 +815,11 @@ body {
     padding-left: 37px;
     padding-right: 37px;
     line-height: 18px; }
+    .nav__item:hover {
+      color: #d22856; }
+    .nav__item:active {
+      color: #fff;
+      opacity: .3; }
   .btn--close {
     display: none; }
   .first__item {
