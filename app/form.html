@@ -32,11 +32,11 @@
       <div class="form__title__box">
         <h1 class="form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
-      <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="form__text--con"> Пожалуйста, заполните форму ниже:</span></p>
       </section>
       <section>
         <h2 class="title-hid">Форма</h2>
-        <form action="index.html" method="post">
+        <form class="form__main" action="index.html" method="post">
           <fieldset class="form__author">
             <legend class="title-hid">Инфо</legend>
             <div class="form__item">
@@ -68,6 +68,7 @@
             <label for="hotel">Разгромил отель</label>
           </fieldset>
           <fieldset class="form__contacts">
+            <legend class="achievmentns__title title-hid">Контактная информация</legend>
             <div class="form__item">
               <label for="phone">Номер телефона</label>
               <input type="text" id="phone" name="phone" value="Номер, пожалуйста">
@@ -87,24 +88,25 @@
             <label for="windows">Windows phone</label>
           </fieldset>
           <fieldset class="form__describtion">
-            <label class="title__describtion" for="">Опиши свои эмоции</label>
-            <textarea class="describ__text" name="name" rows="8" cols="23">Можно прям в карасках, не стеснясь в выражениях</textarea>
+            <label id="text" class="title__describtion" for="">Опиши свои эмоции</label>
+            <textarea id="text" class="describ__text" name="name" rows="8" cols="25">Можно прям в карасках, не стеснясь в выражениях</textarea>
           </fieldset>
           <button type="submit" class="form__btn" name="button">Отправить форму</button>
-          <span>* — обязательные поля</span>
+          <p class="important__fild"><span class="important__item">*</span> — обязательные поля</p>
         </form>
       </section>
+      </main>
       </div>
       <footer>
-        <a href="#"><img src="#" alt="logo"></a>
-        <ul>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Youtube</a></li>
+        <div class="container footer_block--form">
+        <a href="#" class="logo__footer">logo</a>
+        <ul class="social__medias">
+          <li><a href="#" class="media__anchor anchor--twitter">Твитер</a></li>
+          <li><a href="#" class="media__anchor anchor--facebook">Фейсбук</a></li>
+          <li><a href="#" class="media__anchor anchor--youtube">Ютуб</a></li>
         </ul>
-        <span>Разработано</span>
-        <a href="#"><img src="#" alt="htmlacademy"></a>
+        <span class="footer__create">Разработано<a href="#" class="footer__htmlacademy">htmlacademy</a></span>
+        </div>
       </footer>
-    </main>
   </body>
 </html>
