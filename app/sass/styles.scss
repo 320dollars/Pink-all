@@ -11,6 +11,8 @@ $borderColor : #485461;
 $lightGrey : #e5e5e5;
 $borderColor2 : #e9ebec;
 $shapeColor : #f2f2f2;
+$grey : #e5e5e5;
+$green : #2aab6d;
 
 body {
   margin: 0;
@@ -1085,3 +1087,208 @@ body {
 
 
 /* form ------- */
+
+.form__info {
+  padding-bottom: 20px;
+}
+
+.form__title__box {
+  padding: 100px 42px  45px 42px;
+  background: url(../img/back.jpg) no-repeat 0 0;
+}
+
+.form__title {
+  color: $wh;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.form__text {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form__author {
+  padding: 0 20px 25px 20px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+
+.form__author label,
+.form__contacts label {
+  padding-left: 15px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: $red;
+  text-transform: uppercase;
+}
+
+.form__author input,
+.form__contacts input {
+  padding: 20px 25px;
+  font-size: 18px;
+  width: 220px;
+  border: 2px solid $grey;
+  border-radius: 3px;
+}
+
+.form__achievments,
+.form__applications {
+  padding-top: 90px;
+  padding-left: 20px;
+  background: $shapeColor;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.achievmentns__title,
+.applications__title {
+  position: relative;
+  top: 55px;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 18px;
+  color: $red;
+  text-transform: uppercase;
+}
+
+.form__achievments label,
+.form__applications label {
+  font-size: 18px;
+  color: $textColor2;
+  margin-bottom: 35px;
+}
+
+.form__achievments input[type='checkbox'] {
+  margin: 0px 0px 0 7px;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.form__achievments input[type='checkbox'] + label {
+  cursor: pointer;
+  padding: 0 0 0 60px;
+  position: relative;
+}
+
+.form__achievments input[type='checkbox'] + label::before {
+  background-color: $wh;
+  border-radius: 3px;
+  border: 2px solid $grey;
+  content: "";
+  height: 27px;
+  left: 0px;
+  position: absolute;
+  top: -3px;
+  width: 27px;
+}
+
+.form__achievments input[type='checkbox'] + label::after {
+  content: "";
+  height: 20px;
+  left: 4px;
+  position: absolute;
+  opacity: 0;
+  top: 2px;
+  transition: 0.2s;
+  width: 25px;
+}
+
+.form__achievments input[type='checkbox']:checked + label::after {
+  background: url(../img/tick.png) no-repeat center center;
+  opacity: 1;
+}
+
+.form__contacts {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px 10px 20px;
+  border: none;
+}
+
+.form__applications input[type='radio'] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px;
+}
+
+.form__applications input[type='radio'] + label {
+  position: relative;
+  padding: 0 0 0 60px;
+  cursor: pointer;
+}
+
+.form__applications input[type='radio'] + label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0px;
+  width: 28px;
+  height: 28px;
+  border: 3px solid $grey;
+  border-radius: 50%;
+  background-color: $wh;
+}
+
+.form__applications input[type='radio'] + label::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $red;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.form__applications input[type='radio']:checked + label::after {
+  opacity: 1;
+}
+
+.form__describtion {
+  border: none;
+  padding: 35px 18px 45px 18px;
+}
+
+.title__describtion {
+  text-align: center;
+  padding: 0 50px 10px 50px;
+  font-size: 14px;
+  color: $red;
+  text-transform: uppercase;
+}
+
+.describ__text {
+  margin-top: 15px;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.form__btn {
+  background: $green;
+  font-size: 18px;
+  border-radius: 3px;
+  padding: 20px 45px 20px 45px;
+  border: none;
+  color: $wh;
+  text-transform: uppercase;
+}

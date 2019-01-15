@@ -28,61 +28,73 @@
     <button type="button" class="header__btn" name="button"></button>
   </header>
     <main>
-      <section>
-      <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-      </section>
+      <section class="form__info">
+      <div class="form__title__box">
+        <h1 class="form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
+      <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      </section>
       <section>
-        <h2>Форма</h2>
-        <form class="" action="index.html" method="post">
-          <fieldset>
-            <legend>Инфо</legend>
-            <label for="">Фамилия</label>
-            <input type="text" name="" value="">
-            <label for="">Имя</label>
-            <input type="text" name="" value="">
-            <label for="">Отчество</label>
-            <input type="text" name="" value="">
+        <h2 class="title-hid">Форма</h2>
+        <form action="index.html" method="post">
+          <fieldset class="form__author">
+            <legend class="title-hid">Инфо</legend>
+            <div class="form__item">
+              <label for="surname">Фамилия:</label>
+              <input type="text" id="surname" name="surname" value="Укажите фамилию *">
+            </div>
+            <div class="form__item">
+              <label for="name">Имя:</label>
+              <input type="text" id="name" name="name" value="Укажите имя *">
+            </div>
+            <div class="form__item">
+              <label for="third-name">Отчество:</label>
+              <input type="text" id="third-name" name="third-name" value="Ну и отчество тоже">
+            </div>
           </fieldset>
-          <fieldset>
-            <legend>Ваши безбашенные достижения в путешествии</legend>
-            <input type="checkbox" name="" value="">
-            <label for="">Сделал селфи с акулой</label>
-            <input type="checkbox" name="" value="">
-            <label for="">Обгорел на пляже</label>
-            <input type="checkbox" name="" value="">
-            <label for="">Видел Чака Норриса</label>
-            <input type="checkbox" name="" value="">
-            <label for="">Накупил Сувениров</label>
-            <input type="checkbox" name="" value="">
-            <label for="">Удержал башню</label>
-            <input type="checkbox" name="" value="">
-            <label for="">Разгромил отель</label>
+          <fieldset class="form__achievments">
+            <legend class="achievmentns__title">Ваши безбашенные достижения в путешествии</legend>
+            <input type="checkbox" id="selfi" name="selfi" value="selifi with shark">
+            <label for="selfi">Сделал селфи с акулой</label>
+            <input type="checkbox" id="heit" name="heit" value="heit on the beach">
+            <label for="heit">Обгорел на пляже</label>
+            <input type="checkbox" id="chak" name="chak" value="I was saw Chak">
+            <label for="chak">Видел Чака Норриса</label>
+            <input type="checkbox" id="bought" name="bought" value="bought presents">
+            <label for="bought">Накупил Сувениров</label>
+            <input type="checkbox" id="tower" name="tower" value="supported tower">
+            <label for="tower">Удержал башню</label>
+            <input type="checkbox" id="hotel" name="hotel" value="destroed hotel">
+            <label for="hotel">Разгромил отель</label>
           </fieldset>
-          <fieldset>
-            <label for="">Номеро телефона</label>
-            <input type="text" name="" value="">
-            <label for="">Адрес почты</label>
-            <input type="email" name="" value="">
+          <fieldset class="form__contacts">
+            <div class="form__item">
+              <label for="phone">Номер телефона</label>
+              <input type="text" id="phone" name="phone" value="Номер, пожалуйста">
+            </div>
+            <div class="form__item">
+              <label for="email">Адрес почты</label>
+              <input type="email" id="email" name="email" value="Введите почту *">
+            </div>
           </fieldset>
-          <fieldset>
-            <legend>С каким приложением путешествовали?</legend>
-            <input type="radio" name="" value="">
-            <label for="">Pink для ios</label>
-            <input type="radio" name="" value="">
-            <label for="">Pink на android</label>
-            <input type="radio" name="" value="">
-            <label for="">Windows phone</label>
+          <fieldset class="form__applications">
+            <legend class="applications__title">С каким приложением путешествовали?</legend>
+            <input type="radio" id="ios" name="platform" value="ios">
+            <label for="ios">Pink для ios</label>
+            <input type="radio" id="android" name="platform" value="android">
+            <label for="android">Pink на android</label>
+            <input type="radio" id="windows" name="platform" value="windows">
+            <label for="windows">Windows phone</label>
           </fieldset>
-          <fieldset>
-            <label for="">Опиши свои эмоции</label>
-            <textarea name="name" rows="8" cols="80"></textarea>
+          <fieldset class="form__describtion">
+            <label class="title__describtion" for="">Опиши свои эмоции</label>
+            <textarea class="describ__text" name="name" rows="8" cols="23">Можно прям в карасках, не стеснясь в выражениях</textarea>
           </fieldset>
-          <button type="button" name="button">Отправить форму</button>
+          <button type="submit" class="form__btn" name="button">Отправить форму</button>
           <span>* — обязательные поля</span>
         </form>
       </section>
+      </div>
       <footer>
         <a href="#"><img src="#" alt="logo"></a>
         <ul>
