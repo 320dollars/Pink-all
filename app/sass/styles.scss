@@ -1136,6 +1136,17 @@ body {
     display: inline;}
 }
 
+@media (min-width: 960px) {
+  .form__title__box {
+    padding: 170px 42px  90px 42px;
+    background: none;
+  }
+
+  .offer--form {
+    height: 390px;
+  }
+}
+
 .form__author {
   padding: 0 20px 25px 20px;
   border: none;
@@ -1170,7 +1181,8 @@ body {
 
 @media (min-width: 660px) {
   .form__author {
-    padding: 30px 20px 55px 20px;}
+    order: 1;
+    padding: 30px 20px 60px 20px;}
 
   .form__item {
     flex-direction: row;
@@ -1188,7 +1200,17 @@ body {
   .form__contacts input {
     margin-right: 20px;
     flex-grow: 1;
-    width: 500px; }
+    width: 430px;; }
+}
+
+@media (min-width: 960px) {
+  .form__author {
+    padding: 60px 0 0 0;
+  }
+
+  .form__author input {
+    width: 280px;
+  }
 }
 
 .form__achievments,
@@ -1202,7 +1224,8 @@ body {
 }
 
 .achievmentns__title,
-.applications__title {
+.applications__title,
+.title__describtion {
   position: relative;
   top: 55px;
   text-align: center;
@@ -1263,9 +1286,18 @@ body {
 
 @media (min-width: 660px) {
   .achievmentns__title,
-  .applications__title {
+  .applications__title,
+  .title__describtion {
     position: static;
     font-size: 14px;
+  }
+
+  .form__applications {
+    order: 2;
+  }
+
+  .form__achievments {
+    order: 4;
   }
 
   .form__achievments,
@@ -1273,8 +1305,35 @@ body {
     padding-top: 50px;
     padding-left: 60px;
     width: 560px;
+    margin-bottom: 60px;
     background: $wh;
     border: 2px solid $lightGrey;}
+}
+
+@media (min-width: 960px) {
+  .form__applications {
+    width: 350px;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    padding-top: 60px;
+    padding-bottom: 40px
+  }
+
+  .form__achievments {
+    width: 880px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .achievmentns__title,
+  .applications__title,
+  .title__describtion {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .form__contacts {
@@ -1283,6 +1342,60 @@ body {
   padding: 30px 20px 10px 20px;
   border: none;
 }
+
+@media (min-width: 660px) {
+  .form__contacts .form__item {
+    flex-direction: column;
+    margin-left: 25px;
+  }
+
+  .form__contacts input {
+    order: 1;
+  }
+
+  .item--phone {
+    background: url(../img/phone.png) no-repeat 96% center,
+    url(../img/form-icon.png) no-repeat right center;
+  }
+
+  .item--email {
+    background: url(../img/mail.png) no-repeat 96% center,
+    url(../img/form-icon.png) no-repeat right center;
+  }
+
+  .form__contacts label {
+    order: 2;
+    padding-bottom: 0px;
+    padding-top: 15px;}
+
+  .form__contacts {
+    order: 3;
+    width: 570px;
+    margin-bottom: 60px;
+    padding: 30px 30px 10px 30px;
+    border: 2px solid $lightGrey;}
+}
+
+@media (min-width: 960px) {
+  .form__contacts {
+    width: 880px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__contacts .form__item {
+    width: 400px;
+    padding: 0;
+    margin-right: 0;
+    flex-direction: column;}
+
+  .form__contacts input {
+    width: 330px;
+  }
+}
+
 
 .form__applications input[type='radio'] {
   position: absolute;
@@ -1332,17 +1445,28 @@ body {
 }
 
 .title__describtion {
-  text-align: center;
-  padding: 0 50px 10px 50px;
-  font-size: 14px;
-  color: $red;
-  text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 .describ__text {
   margin-top: 15px;
   font-size: 18px;
   padding: 20px;
+}
+
+@media (min-width: 660px) {
+  .form__describtion {
+    order: 5;
+    margin-bottom: 65px;
+    border: 2px solid $lightGrey;
+    padding: 35px 67px 45px 67px; }
+
+  .describ__text {
+    width: 450px;
+  }
+
+  .title__describtion {
+    padding-bottom: 0;}
 }
 
 .form__btn {
@@ -1370,6 +1494,31 @@ body {
 
 .important__item {
   color: $red;
+}
+
+@media (min-width: 660px) {
+  .form__main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__btn {
+    order: 6;
+  }
+
+  .important__fild {
+    order: 6;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 960px) {
+    .form__main {
+      position: relative;
+      flex-direction: column;
+      align-items: flex-start;
+    }
 }
 
 .footer_block--form {
@@ -1431,3 +1580,12 @@ body {
     background: url(../img/html-hover.png) no-repeat 100% center; }
   &:active {
     opacity: .3; } }
+
+@media (min-width: 660px) {
+  .footer_block--form {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 20px 15px 20px;
+    justify-content: space-between;
+    align-items: center; }
+}

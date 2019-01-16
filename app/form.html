@@ -9,6 +9,7 @@
   <title>Pink</title>
 </head>
 <body>
+  <div class="offer-box offer--form"><div class="nav-box"></div></div>
   <div class="container">
     <section>
       <h2 class="title-hid">Навигация</h2>
@@ -71,11 +72,11 @@
             <legend class="achievmentns__title title-hid">Контактная информация</legend>
             <div class="form__item">
               <label for="phone">Номер телефона</label>
-              <input type="text" id="phone" name="phone" value="Номер, пожалуйста">
+              <input class="item--phone" type="text" id="phone" name="phone" value="Номер, пожалуйста">
             </div>
             <div class="form__item">
               <label for="email">Адрес почты</label>
-              <input type="email" id="email" name="email" value="Введите почту *">
+              <input class="item--email" type="email" id="email" name="email" value="Введите почту *">
             </div>
           </fieldset>
           <fieldset class="form__applications">
@@ -88,8 +89,8 @@
             <label for="windows">Windows phone</label>
           </fieldset>
           <fieldset class="form__describtion">
-            <label id="text" class="title__describtion" for="">Опиши свои эмоции</label>
-            <textarea id="text" class="describ__text" name="name" rows="8" cols="25">Можно прям в карасках, не стеснясь в выражениях</textarea>
+            <legend class="title__describtion" for="">Опиши свои эмоции</legend>
+            <textarea class="describ__text" name="name" rows="8" cols="25">Можно прям в красках, не стесняясь в выражениях</textarea>
           </fieldset>
           <button type="submit" class="form__btn" name="button">Отправить форму</button>
           <p class="important__fild"><span class="important__item">*</span> — обязательные поля</p>
