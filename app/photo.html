@@ -10,6 +10,7 @@
 </head>
 <body>
   <div class="offer-box offer--form"><div class="nav-box"></div></div>
+  <div class="panorama--box"></div>
   <div class="container">
     <section>
       <h2 class="title-hid">Навигация</h2>
@@ -36,18 +37,19 @@
         <p class="photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </section>
       <section class="photo__messages">
-        <div class="photo__message">
+        <div class="photo__message--panorama">
           <span class="message__special">Панорама дня</span>
-          <img src="img/panorama.jpg" alt="photo">
-          <div class="message__box">
+          <img class="img--1" src="img/panorama.jpg" alt="photo">
+          <div class="message__box--panorama">
             <h2 class="message__author">Анна<span class="message__time"> (5 минут назад)</span></h2>
             <p class="message__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <button class="message__like" type="button" name="button">Like</button>
             <span class="like__amount">Нравится:215</span>
           </div>
         </div>
+        <div class="messages__box">
         <div class="photo__message">
-          <img class="message_img--1" src="img/photo-1jpg.jpg" alt="photo">
+          <img class="message_img img--2 " src="img/photo-1.jpg" alt="photo">
           <div class="message__box">
             <h2 class="message__author">Левон<span class="message__time"> (5 часов назад)</span></h2>
             <p class="message__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -56,7 +58,7 @@
           </div>
         </div>
         <div class="photo__message">
-          <img class="message_img--1" src="img/photo-2.jpg" alt="photo">
+          <img class="message_img img--2" src="img/photo-2.png" alt="photo">
           <div class="message__box">
             <h2 class="message__author">Антон <span class="message__time"> (12 часов назад)</span></h2>
             <p class="message__comment">Соседи будут рады</p>
@@ -65,7 +67,7 @@
           </div>
         </div>
         <div class="photo__message">
-          <img class="message_img--1" src="img/photo-3jpg.jpg" alt="photo">
+          <img class="message_img img--2" src="img/photo-3.jpg" alt="photo">
           <div class="message__box">
             <h2 class="message__author">Борис <span class="message__time"> (20 часов назад)</span></h2>
             <p class="message__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -74,7 +76,7 @@
           </div>
         </div>
         <div class="photo__message">
-          <img class="message_img--1" src="img/photo-4.jpg" alt="photo">
+          <img class="message_img img--2" src="img/photo-4.jpg" alt="photo">
           <div class="message__box">
             <h2 class="message__author">Сергей <span class="message__time"> (25 часов назад)</span></h2>
             <p class="message__comment">Самая кубанская в мире!</p>
@@ -83,7 +85,7 @@
           </div>
         </div>
         <div class="photo__message">
-          <img class="message_img--1" src="img/photo-5.jpg" alt="photo">
+          <img class="message_img img--2" src="img/photo-5.jpg" alt="photo">
           <div class="message__box">
             <h2 class="message__author">Максим <span class="message__time"> (40 часов назад)</span></h2>
             <p class="message__comment">Где снег то</p>
@@ -92,7 +94,7 @@
           </div>
         </div>
         <div class="photo__message">
-          <img class="message_img--1" src="img/photo-6.jpg" alt="photo">
+          <img class="message_img img--2" src="img/photo-6.jpg" alt="photo">
           <div class="message__box">
             <h2 class="message__author">Надежда <span class="message__time"> (45 часов назад)</span></h2>
             <p class="message__comment">Всем GM и взаимные лайки!</p>
@@ -100,19 +102,25 @@
             <span class="like__amount">Нравится:215</span>
           </div>
         </div>
-        <p class="photo__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
+        <p class="photo__text text--deks">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </section>
       <section class="photo__redactor">
-        <img src="img/photo-7.jpg" alt="modile-photo">
+        <img class="img--3" src="img/photo-7.jpg" alt="modile-photo">
+        <div class="redactor__settings">
         <ul class="redactor__btns">
-          <li><button class="redactor__btn btn--cut" type="button" name="button">Обрезать</button></li>
-          <li><button class="redactor__btn btn--fill" type="button" name="button">Залить</button></li>
-          <li><button class="redactor__btn btn--cont" type="button" name="button">Контраст</button></li>
+          <li><button class="redactor__btn btn--cut" type="button" name="button">Обрезать</button>
+          <input class="redactor__range--hidden" type="range" name="size-number" step="1" min="1" max="100" value="80"></li>
+          <li><button class="redactor__btn btn--fill" type="button" name="button">Залить</button>
+          <input class="redactor__range--hidden" type="range" name="size-number" step="1" min="1" max="100" value="80"></li>
+          <li><button class="redactor__btn btn--cont" type="button" name="button">Контраст</button>
+          <input class="redactor__range--hidden" type="range" name="size-number" step="1" min="1" max="100" value="80"></li>
         </ul>
-        <input type="range" name="size-number" step="1" min="1" max="100" value="80">
+        <input class="redactor__range range--no-tab" type="range" name="size-number" step="1" min="1" max="100" value="80">
         <div class="redactor__options">
           <button class="redactor__opt  btn--post" type="button" name="button">Запостить</button>
           <button class="redactor__opt btn--cancel" type="button" name="button">Отмена</button>
+        </div>
         </div>
       </section>
     </main>
