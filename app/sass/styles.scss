@@ -13,6 +13,8 @@ $borderColor2 : #e9ebec;
 $shapeColor : #f2f2f2;
 $grey : #e5e5e5;
 $green : #2aab6d;
+$timeColor : #5e6873;
+$lighterGray : #dddfe0;
 
 body {
   margin: 0;
@@ -1660,4 +1662,159 @@ body {
   font-weight: 300;
   text-align: center;
   color: $wh;
+}
+
+.photo__text {
+  text-align: center;
+  padding: 50px 40px 30px 40px;
+}
+
+@media (min-width: 660px) {
+  .photo__title {
+    font-size: 50px;
+    line-height: 50px;
+    bottom: 40px;
+  }
+
+  .photo__text {
+    font-size: 18px;
+    padding: 50px 110px 30px 110px;
+  }
+}
+
+.photo__message {
+  position: relative;
+  margin-top: 20px;
+}
+
+.message__special {
+  display: flex;
+  color: $wh;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  width: 140px;
+  height: 35px;
+  background: $red;
+  position: absolute;
+  left: 160px;
+}
+
+.message__box {
+  background: $shapeColor;
+  margin: -20px 20px 20px 20px;
+  padding: 20px 15px 20px 15px;
+}
+
+.message__author {
+  font-size: 14px;
+  color: $textColor2;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.message__comment {
+  margin-top: 0;
+}
+
+.message__time {
+  font-weight: normal;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $timeColor;
+}
+
+.message__like {
+  position: relative;
+  bottom: 4px;
+  border: none;
+  width: 15px;
+  height: 15px;
+  font-size: 1px;
+  color: transparent;
+  background: transparent url(../img/icon-heart.png) no-repeat;
+}
+
+.like__amount {
+  padding-left: 10px;
+  text-transform: uppercase;
+  color: $red;
+}
+
+.message_img--1 {
+  padding-left: 20px;
+}
+
+.photo__redactor {
+  background: $shapeColor;
+  padding: 20px;
+}
+
+.redactor__btns {
+  list-style: none;
+  display: flex;
+  margin-left: -20px;
+  justify-content: space-around;
+}
+
+.redactor__btn {
+  width: 45px;
+  height: 45px;
+  border: none;
+  font-size: 1px;
+  color: transparent
+}
+
+.btn--cut {
+  background: transparent url(../img/crop.png) no-repeat center center;
+}
+
+.btn--fill {
+  background: transparent url(../img/fill.png) no-repeat center center;
+}
+
+.btn--cont {
+  background: transparent url(../img/contrast.png) no-repeat center center;
+}
+
+.photo__redactor input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 240px;
+  height: 2px;
+  background-color: $textColor2;
+  margin: 20px;
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 22px;
+    height: 22px;
+    background: transparent url(../img/slider.png) no-repeat center center;
+  }
+}
+
+.redactor__options {
+  border-top: 1px solid $lighterGray;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.redactor__opt {
+  width: 274px;
+  height: 49px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $red;
+  background: transparent;
+  border-radius: 30px;
+  border: 3px solid $red;
+}
+
+.btn--cancel {
+  color: $lighterGray;
+  border-color: $lighterGray;
 }
