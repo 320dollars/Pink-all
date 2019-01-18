@@ -1454,6 +1454,7 @@ body {
   .img--1 {
     display: none; }
   .photo__message--panorama {
+    width: 980px;
     padding-top: 505px; }
   .message__special {
     left: 800px; }
